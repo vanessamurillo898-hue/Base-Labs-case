@@ -9,3 +9,13 @@ This project ingests raw CSV files for a liquor distributor, transforms the data
 - CSV outputs for reporting
 
 ## Project Structure
+
+1. Download the CSV files from PwC:
+   https://www.pwc.com/us/en/careers/university-relations/data-and-analytics-case-studies-files.html
+
+2. Place the CSV files in:
+   data/manual/
+
+3. Run:
+   ```bash
+   python src/run_sql_pipeline.py

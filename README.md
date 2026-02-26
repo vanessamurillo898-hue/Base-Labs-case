@@ -1,17 +1,11 @@
-# Annie’s Magic Numbers — Inventory Analysis (SQL-first)
+# Annie’s Magic Numbers – Inventory Analysis (Base Labs Case)
 
-## Overview
-This project ingests raw CSVs (Sales, Purchase Prices) into DuckDB and performs SQL-first transformations to compute:
-- Profit ($) and margin (%) at product and brand level
-- Top 10 products and brands by profit and margin
-- Loss-making products and brands to consider dropping
+This project ingests raw CSV files for a liquor distributor, transforms the data using SQL, and generates analytical reports to understand profits and margins by product and brand.
 
-Python is used only to orchestrate ingestion and execution. All business logic lives in SQL.
+## Tech Stack
+- Python (orchestration)
+- DuckDB (analytical database)
+- SQL (transformations)
+- CSV outputs for reporting
 
-## How to run
-1. Place CSVs in `data/manual/`:
-   - SalesFINAL*.csv
-   - *PurchasePrices*.csv
-2. Run:
-   ```bash
-   python src/run_sql_pipeline.py
+## Project Structure
